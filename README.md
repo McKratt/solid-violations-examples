@@ -1,2 +1,4 @@
 # solid-violations-examples
-A set a Code Example violating SOLID Principles
+A set of code examples violating SOLID Principles
+
+The violations are explained inside the test classes
