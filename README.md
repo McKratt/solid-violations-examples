@@ -32,3 +32,11 @@ It is not possible to add a new shape without modifying this method.
 > Subtypes must be substitutable for their base types
 
 See [**LSPViolationTest**](src/test/java/net/bakaar/solidviolation/lsp/LSPViolationTest.java) for details
+
+### Interface Segregation Principle (ISP)
+
+> Clients should not be forced to depend upon interfaces that they don't use
+
+The example is based on : https://springframework.guru/principles-of-object-oriented-design/interface-segregation-principle/
+
+See [**ISPViolationTest**](src/test/java/net/bakaar/solidviolation/isp/ISPViolationTest.java) for details
