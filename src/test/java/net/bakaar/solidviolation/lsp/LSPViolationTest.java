@@ -4,11 +4,13 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class LSPViolationsTest {
+public class LSPViolationTest {
 
-    // This test should pass, it characterize the Rectangle area behaviour
+    /**
+     * This test should pass, it characterize the Rectangle area behaviour
+     */
     @Test
-    public void calulate_the_area_of_rectangle() throws Exception {
+    public void calulate_the_area_of_rectangle() {
         // Given
         Rectangle shape = new Rectangle();
         // When
@@ -18,9 +20,11 @@ public class LSPViolationsTest {
         assertThat(shape.area()).isEqualTo(6);
     }
 
-    // This test should failed because square is not substitutable to a rectangle -> LSP violation
+    /**
+     * This test should failed because square is not substitutable to a rectangle -> LSP violation
+     */
     @Test
-    public void calculate_the_area_of_square() throws Exception {
+    public void calculate_the_area_of_square() {
         // Given
         Rectangle shape = new Square();
         // When
