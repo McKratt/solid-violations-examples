@@ -1,0 +1,6 @@
+@startuml
+class "Employee" as emp {
+    calculatePay()
+    save()
+}
+@enduml
