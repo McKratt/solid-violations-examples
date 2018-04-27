@@ -40,3 +40,10 @@ See [**LSPViolationTest**](src/test/java/net/bakaar/solidviolation/lsp/LSPViolat
 The example is based on : https://springframework.guru/principles-of-object-oriented-design/interface-segregation-principle/
 
 See [**ISPViolationTest**](src/test/java/net/bakaar/solidviolation/isp/ISPViolationTest.java) for details
+
+### Dependency Inversion Principle (DIP)
+
+> High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+> Abstractions should not depend on details. Details should depend on abstractions.
+
