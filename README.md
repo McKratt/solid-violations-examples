@@ -47,3 +47,6 @@ See [**ISPViolationTest**](src/test/java/net/bakaar/solidviolation/isp/ISPViolat
 
 > Abstractions should not depend on details. Details should depend on abstractions.
 
+The example is based on : http://www.oodesign.com/dependency-inversion-principle.html
+
+See [**DIPViolationTest**](src/test/java/net/bakaar/solidviolation/dip/DIPViolationTest.java) for details
