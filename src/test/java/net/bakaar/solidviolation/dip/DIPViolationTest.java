@@ -15,6 +15,9 @@ public class DIPViolationTest {
 
     private Manager manager = new Manager();
 
+    /**
+     * The great similarity between test and the presence of two different implementations inside those tests should be a trigger to refactoring.
+     */
     @Test
     public void manager_should_manage_worker() {
         // Given
