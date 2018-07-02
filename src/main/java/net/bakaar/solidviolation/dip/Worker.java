@@ -1,6 +1,6 @@
 package net.bakaar.solidviolation.dip;
 
-public class Worker {
+public class Worker implements Employee {
     public void work() {
         // working
     }

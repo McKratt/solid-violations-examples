@@ -1,15 +1,14 @@
 package net.bakaar.solidviolation.lsp;
 
-public class Square extends Rectangle {
-    @Override
+public class Square {
+
+    protected int width;
+
     public void setWidth(int width) {
-        super.setWidth(width);
-        super.setHeight(width);
+        this.width = width;
     }
 
-    @Override
-    public void setHeight(int height) {
-        super.setHeight(height);
-        super.setWidth(height);
+    public int area() {
+        return width * width;
     }
 }

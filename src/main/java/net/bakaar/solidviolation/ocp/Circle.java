@@ -1,8 +1,9 @@
 package net.bakaar.solidviolation.ocp;
 
-public class Circle implements Shape {
+public class Circle implements Drawable {
+
     @Override
-    public ShapeType getType() {
-        return ShapeType.CIRCLE;
+    public void draw() {
+        System.out.println("draw Circle");
     }
 }

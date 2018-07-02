@@ -5,4 +5,9 @@ public class Square implements Shape {
     public ShapeType getType() {
         return ShapeType.SQUARE;
     }
+
+    @Override
+    public void draw() {
+        System.out.println("draw Square");
+    }
 }

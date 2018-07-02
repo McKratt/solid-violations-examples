@@ -1,12 +1,8 @@
 package net.bakaar.solidviolation.lsp;
 
-public class Rectangle {
-    private int width;
-    private int height;
+public class Rectangle extends Square {
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
+    private int height;
 
     public void setHeight(int height) {
         this.height = height;

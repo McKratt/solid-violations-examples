@@ -1,22 +1,15 @@
 package net.bakaar.solidviolation.dip;
 
 public class Manager {
-    private Worker worker;
-    private SuperWorker superWorker;
+
+    private Employee employee;
 
     public void manage() {
-        if (worker != null) {
-            worker.work();
-        } else if (superWorker != null) {
-            superWorker.work();
-        }
+        employee.work();
     }
 
-    public void setWorker(Worker worker) {
-        this.worker = worker;
+    public void setEmployee(Employee empl) {
+        this.employee = empl;
     }
 
-    public void setWorker(SuperWorker worker) {
-        this.superWorker = worker;
-    }
 }

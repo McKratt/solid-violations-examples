@@ -9,23 +9,7 @@ public class ShapeDrawer {
      */
     public void drawAllShapes(List<Shape> shapes) {
         for (Shape shape : shapes) {
-            switch (shape.getType()) {
-                case CIRCLE:
-                    drawCircle((Circle) shape);
-                    break;
-                case SQUARE:
-                    drawSquare((Square) shape);
-                    break;
-            }
+            shape.getType().getDrawable().draw();
         }
-
-    }
-
-    private void drawSquare(Square square) {
-        System.out.println("Draw a Sqaure " + square);
-    }
-
-    private void drawCircle(Circle circle) {
-        System.out.println("Draw a Circle " + circle);
     }
 }
