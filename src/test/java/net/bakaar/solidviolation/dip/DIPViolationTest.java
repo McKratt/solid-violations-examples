@@ -21,7 +21,7 @@ public class DIPViolationTest {
     @Test
     public void manager_should_manage_worker() {
         // Given
-        Worker worker = spy(new Worker());
+        NormalWorker worker = spy(new NormalWorker());
         manager.setWorker(worker);
         // When
         manager.manage();
