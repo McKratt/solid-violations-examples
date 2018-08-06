@@ -6,7 +6,10 @@ import java.util.List;
 
 public class ShapeDrawer {
 
-    List<Drawer> drawers = Arrays.asList(new CircleDrawer(), new SquareDrawer());
+    /**
+     * This list should be initialized inside a factory and injected in the constructor
+     */
+    private List<Drawer> drawers = Arrays.asList(new CircleDrawer(), new SquareDrawer());
     /**
      * If I have a new Shape, like Triangle for example, I have to modify this method (i.e. this class). That's a OCP violation !
      */
