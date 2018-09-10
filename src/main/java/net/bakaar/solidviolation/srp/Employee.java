@@ -1,6 +1,9 @@
 package net.bakaar.solidviolation.srp;
 
 public class Employee {
+
+    private String nom;
+    private String tel;
     //This two should be final because they are both necessary for the good behaviour of the class.
     private PayCalculator calculator;
     private EmployeeRepository repository;
