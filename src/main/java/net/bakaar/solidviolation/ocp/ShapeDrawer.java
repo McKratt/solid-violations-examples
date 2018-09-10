@@ -22,7 +22,7 @@ public class ShapeDrawer {
     }
 
     private void drawSquare(Square square) {
-        System.out.println("Draw a Sqaure " + square);
+        System.out.println("Draw a Square " + square);
     }
 
     private void drawCircle(Circle circle) {
