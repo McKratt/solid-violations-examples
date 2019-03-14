@@ -13,7 +13,6 @@ import static org.mockito.Mockito.verify;
  */
 public class DIPViolationTest {
 
-    private Manager manager = new Manager();
 
     /**
      * The great similarity between test and the presence of two different implementations inside those tests should be a trigger to refactoring.
@@ -22,7 +21,7 @@ public class DIPViolationTest {
     public void manager_should_manage_worker() {
         // Given
         Worker worker = spy(new Worker());
-        manager.setWorker(worker);
+        Manager manager = new Manager(worker);
         // When
         manager.manage();
         // Then
@@ -33,7 +32,7 @@ public class DIPViolationTest {
     public void manager_should_manage_superworker() {
         // Given
         SuperWorker worker = spy(new SuperWorker());
-        manager.setWorker(worker);
+        Manager manager = new Manager(worker);
         // When
         manager.manage();
         // Then
