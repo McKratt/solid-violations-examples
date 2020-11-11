@@ -1,16 +1,17 @@
 package net.bakaar.solidviolation.lsp;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class LSPViolationTest {
+class LSPViolationTest {
 
     /**
      * This test should pass, it characterize the Rectangle area behaviour
      */
     @Test
-    public void calulate_the_area_of_rectangle() {
+    void calulate_the_area_of_rectangle() {
         // Given
         Rectangle shape = new Rectangle();
         // When
@@ -24,7 +25,7 @@ public class LSPViolationTest {
      * This test should failed because square is not substitutable to a rectangle -> LSP violation
      */
     @Test
-    public void calculate_the_area_of_square() {
+    void calculate_the_area_of_square() {
         // Given
         Rectangle shape = new Square();
         // When

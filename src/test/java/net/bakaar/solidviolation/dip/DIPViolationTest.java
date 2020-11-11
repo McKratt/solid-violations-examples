@@ -1,6 +1,7 @@
 package net.bakaar.solidviolation.dip;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
@@ -11,15 +12,15 @@ import static org.mockito.Mockito.verify;
  * @see Manager
  * Note : It also violate the OCP !
  */
-public class DIPViolationTest {
+class DIPViolationTest {
 
-    private Manager manager = new Manager();
+    private final Manager manager = new Manager();
 
     /**
      * The great similarity between test and the presence of two different implementations inside those tests should be a trigger to refactoring.
      */
     @Test
-    public void manager_should_manage_worker() {
+    void manager_should_manage_worker() {
         // Given
         Worker worker = spy(new Worker());
         manager.setWorker(worker);
@@ -30,7 +31,7 @@ public class DIPViolationTest {
     }
 
     @Test
-    public void manager_should_manage_superworker() {
+    void manager_should_manage_superworker() {
         // Given
         SuperWorker worker = spy(new SuperWorker());
         manager.setWorker(worker);

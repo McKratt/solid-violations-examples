@@ -1,16 +1,17 @@
 package net.bakaar.solidviolation.isp;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ISPViolationTest {
+class ISPViolationTest {
 
     /**
      * This test is awaited for a ToyHouse because we selling ToyHouse so they should have a price.
      */
     @Test
-    public void setPrice_should_set_price() {
+    void setPrice_should_set_price() {
         // Given
         ToyHouse toy = new ToyHouse();
         // When
@@ -25,7 +26,7 @@ public class ISPViolationTest {
      * You should separate the fly method from the setPrice method.
      */
     @Test
-    public void fly_should_dont_know() {
+    void fly_should_dont_know() {
         // Given
         ToyHouse toy = new ToyHouse();
         // When

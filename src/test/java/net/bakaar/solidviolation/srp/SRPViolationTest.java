@@ -1,6 +1,7 @@
 package net.bakaar.solidviolation.srp;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 
@@ -16,13 +17,13 @@ import static org.mockito.Mockito.verify;
  * We will demonstrate here that we can construct the class by two exclusive ways and it works fine for each of the way.
  * (one of the visible symptom of the SRP : not all the private fields of a class are used for all the public methods of this class)
  */
-public class SRPViolationTest {
+class SRPViolationTest {
 
     /**
      * This test pass without any trouble
      */
     @Test
-    public void store_should_save_employee_in_storage() {
+    void store_should_save_employee_in_storage() {
         // Given
         EmployeeRepository repository = mock(EmployeeRepository.class);
         Employee employee = new Employee(repository);
@@ -36,7 +37,7 @@ public class SRPViolationTest {
      * This test pass without any trouble
      */
     @Test
-    public void calculatePay_should_compute_salary() {
+    void calculatePay_should_compute_salary() {
         // Given
         PayCalculator calculator = mock(PayCalculator.class);
         given(calculator.calculatePay()).willReturn(new Random(1L).nextInt());
